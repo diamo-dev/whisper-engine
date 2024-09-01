@@ -1,0 +1,463 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("assets/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("assets/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("assets/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("assets/Poppins/Poppins-Light.ttf");
+}
+
+/* UDim syntax */
+
+/* --udim_[property] = [scale] [emOffset] [pxOffset] */
+
+body {
+    margin: 0;
+}
+
+.viewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(30, 30, 30);
+    position: relative;
+}
+
+.sidebar {
+    width: 20em;
+    height: 100%;
+    background-color: rgb(40, 40, 40);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(60, 60, 60);
+    overflow: hidden;
+    position: absolute;
+}
+
+.infoBar {
+    width: calc(20em - 1px);
+    --udim_right: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(60, 60, 60);
+    overflow: hidden;
+    position: absolute;
+}
+
+.topBar {
+    width: calc(100% - 1px);
+    height: 60px;
+    left: 1px;
+    background-color: rgb(25, 25, 25);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(60, 60, 60);
+    overflow: hidden;
+    position: absolute;
+}
+
+.greaterChatArea {
+    --udim_width: 100% -40em;
+    width: calc(100% - 40em);
+    height: 100%;
+    left: 20em;
+    overflow-y: hidden;
+    position: absolute;
+}
+
+.chat {
+    width: 100%;
+    height: calc(100% - 61px);
+    top: 61px;
+    overflow-y: hidden;
+    position: absolute;
+}
+
+.conversationArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 20px;
+    position: absolute;
+    pointer-events: auto;
+}
+
+.conversationClipping {
+    width: 100%;
+    height: calc(100% - 62px);
+    position: absolute;
+    overflow: hidden;
+}
+
+.scrollArea {
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: scroll;
+    position: absolute;
+    scrollbar-width: none;
+}
+
+.scrollExtents {
+    width: 100%;
+}
+
+.sidebarContentController {
+    width: 100%;
+    height: calc(100% - 60px);
+    left: 100%;
+    --udim_left: 0%;
+    overflow-x: visible;
+    overflow-y: clip;
+    position: relative;
+}
+
+.homeContent {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: absolute;
+}
+
+.searchContent {
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: absolute;
+}
+
+.searchFlex {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.searchBar {
+    width: calc(100% - 20px);
+    height: 35px;
+    left: 10px;
+    margin-top: 10px;
+    background-color: rgb(55, 55, 55);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(90, 90, 90);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.searchInput {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Poppins-Light";
+    line-height: 25px;
+    display: inline-flex;
+    color: white;
+    position: relative;
+    border: none;
+    border-width: 0;
+    background: none;
+    resize: none;
+    overflow: visible;
+    outline-width: 0;
+}
+
+.dynamicList {
+    width: calc(100% - 20px);
+    left: 10px;
+    background-color: rgb(50, 50, 50);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.listItem {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(35, 35, 35);
+}
+
+.listLabel {
+    width: calc(100% - 20px);
+    height: 15px;
+    margin-top: 10px;
+    left: 10px;
+    font-family: "Poppins-Medium";
+    line-height: 15px;
+    position: relative;
+}
+
+.searchAuthor {
+    width: calc(100% - 20px);
+    height: 30px;
+    left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.searchAuthorPfp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+}
+
+.searchAuthorName {
+    width: calc(100% - 40px);
+    height: 20px;
+    top: 5px;
+    left: 40px;
+    font-family: "Poppins-Light";
+    color: rgb(200, 200, 200);
+    line-height: 20px;
+    position: absolute;
+}
+
+.searchMessage {
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: 10px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: black;
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    overflow-wrap: break-word;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.searchOtherMessage {
+    max-width: calc(100% - 40px);
+    left: 10px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: rgb(220, 220, 220);
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    overflow-wrap: break-word;
+    background-color: rgb(20, 20, 20);
+    border-radius: 15px;
+    position: relative;
+}
+
+.requestsContent {
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: absolute;
+}
+
+p {
+    font-family: "Poppins";
+    margin: 0;
+    color: white;
+}
+
+.title {
+    font-family: "Poppins-Bold";
+    font-size: 40;
+    padding-left: 10px;
+    margin-bottom: -10px;
+    overflow-y: hidden;
+}
+
+.contact {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    --udim_width: 100% -60px;
+    --udim_height: 70px;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+}
+
+.name {
+    width: calc(100% - 80px);
+    height: 20px;
+    top: 10px;
+    left: 80px;
+    font-family: "Poppins-Regular";
+    font-size: 20;
+    position: absolute;
+}
+
+.statusIcon {
+    width: 15px;
+    height: 15px;
+    top: 40px;
+    left: 80px;
+    position: absolute;
+}
+
+.statusLabel {
+    width: calc(100% - 100px);
+    height: 15px;
+    top: 40px;
+    left: 100px;
+    font-family: "Poppins-Light";
+    line-height: 15px;
+    position: absolute;
+    color: rgb(200, 200, 200);
+}
+
+.sidebarTabs {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(35, 35, 35);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    position: relative;
+}
+
+.chatButton {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    position: relative;
+}
+
+.chatBar {
+    width: calc(100% - 40px);
+    height: 40px;
+    top: calc(100% - 60px);
+    left: 20px;
+    border-radius: 10px;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: rgb(80, 80, 80);
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+}
+
+.messageBounds {
+    width: calc(100% - 60px);
+    left: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.messageBubble, .recMessageBubble {
+    max-width: 70%;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.messageContents, .recMessageContents {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: black;
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+.chatArrow, .recChatArrow {
+    right: -10px;
+    bottom: 0px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    content: url("assets/Icons/Chat Arrow.svg")
+}
+
+.authorBounds {
+    width: calc(100% - 60px);
+    left: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.inChatPfp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+}
+
+.inChatName {
+    width: calc(100% - 40px);
+    height: 30px;
+    left: 40px;
+    font-family: "Poppins-Light";
+    line-height: 30px;
+    color: rgb(220, 220, 220);
+    position: absolute;
+}
+
+.recMessageBubble {
+    margin-left: 0px;
+    margin-right: auto;
+    background-color: rgb(20, 20, 20);
+}
+
+.recMessageContents {
+    color: white;
+}
+
+.recChatArrow {
+    content: url("assets/Icons/Recieving Chat Arrow.svg");
+    left: -10px;
+}

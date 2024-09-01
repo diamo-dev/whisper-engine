@@ -1,0 +1,262 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+    <script type="module" src="UDim.js"></script>
+    <script type="module" src="ColorLerp.js"></script>
+    <script type="module" src="LerpEngine.js"></script>
+</head>
+
+<body>
+    <div class="viewport">
+        <div class="sidebar">
+            <div class="sidebarContentController" id="sidebarController">
+                <div class="searchContent">
+                    <div class="searchFlex">
+                    <div class="searchBar">
+                        <input class="searchInput" value="jame"></input>
+                    </div>
+                    <p class="listLabel">People</p>
+                    <div class="dynamicList">
+                        <div class="listItem">
+
+                        </div>
+                        <div class="listItem">
+
+                        </div>
+                        <div class="listItem">
+                            
+                        </div>
+                    </div>
+                    <p class="listLabel">Messages</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    <div class="searchAuthor">
+                        <img class="searchAuthorPfp"></img>
+                        <p class="searchAuthorName">John Smith</p>
+                    </div>
+                    <p class="searchOtherMessage">i hate <b>jame</b>s frfr ong</p>
+                    <p class="searchMessage">hear anything abt <b>jame</b>s?</p>
+                    </div>
+                </div>
+                <div class="homeContent">
+                    <p class="title">Whisperity</p>
+                    <div class="contact" id="test1">
+                        <img class="pfp"></img>
+                        <p class="name">John Smith</p>
+                        <img class="statusIcon" src="./assets/Icons/Recieved.svg"></img>
+                        <p class="statusLabel">Recieved - 1h ago</p>
+                    </div>
+                </div>
+                <div class="requestsContent">
+
+                </div>
+            </div>
+            <div class="sidebarTabs">
+                <img class="button" id="searchButton" src="./assets/Icons/Search.svg"></img>
+                <img class="chatButton" id="homeButton" src="./assets/Icons/Chat.svg"></img>
+                <img class="button" id="requestsButton" src="./assets/Icons/Plus.svg"></img>
+            </div>
+        </div>
+        <div class="greaterChatArea" id="chatArea">
+            <div class="topBar">
+
+            </div>
+            <div class="chat">
+                <div class="conversationClipping">
+                    <div class="conversationArea" id="contents">
+                        <div class="messageBounds">
+                            <div class="messageBubble">
+                                <p class="messageContents">so if we were gaming</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="messageBubble">
+                                <p class="messageContents">would you even know?</p>
+                                <img class="chatArrow"></img>
+                            </div>
+                        </div>
+                        <div class="authorBounds">
+                            <img class="inChatPfp"></img>
+                            <p class="inChatName">John Smith</p>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                            </div>
+                        </div>
+                        <div class="messageBounds">
+                            <div class="recMessageBubble">
+                                <p class="recMessageContents">we are so back</p>
+                                <img class="recChatArrow"></img>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="scrollArea" id="scrollArea">
+                    <div class="scrollExtents" id="scrollExtents"></div>
+                </div>
+                <div class="chatBar">
+
+                </div>
+            </div>
+        </div>
+        <div class="infoBar" id="infoBar">
+
+        </div>
+    </div>
+</body>
+
+</html>
