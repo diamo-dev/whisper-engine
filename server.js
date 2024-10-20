@@ -1916,9 +1916,6 @@ const delay = (ms) => { return new Promise((res) => { setTimeout(res, ms) }) };
 //WHISPER-2BFm-9lL1poTw7ThoOWLSw5CwkcijDBwp1GPeqiy1LAJHAIlmG8GLkGyHP7uav78dmmQA
 
 (async () => {
-    let test = new PaginatedFile("./Whisper/Persistent Stream.txt", null, engine.debugRegistry);
-    await test.appendToBeginning("oohhhhh");
-
     let status = await engine.call("user/login", "WHISPER-2BFH-piiLpqot1tjA1o9Fmvfmu9HNWtq4wlcRa9xg1s0sC3m1QjDVFDTkhq3Ugb6BAhQD", "diamo", "")
     console.log(status);
     while (true) {
