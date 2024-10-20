@@ -13,7 +13,7 @@ If theres anyone qualified, reach out to me if theres any vulnurabilities.
 
 ## Progress
 
-Alpha v0.5
+**Alpha v0.5 released!**
 - Persistent streams finished. All that's left for the backend is making chat logic.
 - Engine interaction layer complete.
 - Backend officially halfway done!
