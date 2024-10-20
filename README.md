@@ -13,5 +13,4 @@ If theres anyone qualified, reach out to me if theres any vulnurabilities.
 
 ## Progress
 
-I've finished the filesystem interaction layer. I haven't made the actual chat system yet. Thats the project's current priority.
-I'm dreading making a frontend but I made some progress.
+Persistent streams finished. All that's left for the backend is making chat logic.
