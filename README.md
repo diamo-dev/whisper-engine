@@ -13,4 +13,7 @@ If theres anyone qualified, reach out to me if theres any vulnurabilities.
 
 ## Progress
 
-Persistent streams finished. All that's left for the backend is making chat logic.
+Alpha v0.5
+- Persistent streams finished. All that's left for the backend is making chat logic.
+- Engine interaction layer complete.
+- Backend officially halfway done!
